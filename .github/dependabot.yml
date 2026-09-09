@@ -1,0 +1,16 @@
+# Base-image digests are pinned in every Dockerfile; a pinned digest nobody
+# watches only rots, so Dependabot proposes the bumps. Add a directory entry
+# per image.
+version: 2
+updates:
+  - package-ecosystem: docker
+    directories:
+      - /kiosk
+    schedule:
+      interval: weekly
+      day: monday
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
