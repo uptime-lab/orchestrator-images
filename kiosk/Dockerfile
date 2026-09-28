@@ -17,7 +17,7 @@
 # support, so on a Pi 5 / CM5 the GBM allocator never comes up and cage dies
 # with "Failed to create allocator" while the container reads as Up. Mesa 25
 # in trixie drives both the Pi 4 (v3d 4.2) and Pi 5 (v3d 7.1) GPUs.
-FROM debian:trixie-slim@sha256:d7e12182ce18b85b93007c1dedf31f2d29e01ccf3182cc4017c709b6259bc132
+FROM debian:trixie-slim@sha256:a99cfc517144bc59b1978475ec53b46ecabec7e43635402ee5b77cc54cd1b20a
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         cage \
